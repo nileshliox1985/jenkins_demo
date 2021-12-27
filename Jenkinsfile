@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh ("build.sh")
+                echo $?
                 
             }
         }
