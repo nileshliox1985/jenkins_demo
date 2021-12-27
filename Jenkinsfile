@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cd demo
+                sh 'build.sh'
                 
             }
         }
