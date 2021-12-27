@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 cd demo
-                mvn clean package
+                
             }
         }
         stage('Deploy') {
