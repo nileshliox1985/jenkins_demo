@@ -21,7 +21,7 @@ pipeline {
         stage('Mail') {
             steps {
                 echo 'Emailing....'
-                mail bcc: '', body: 'Please go to ${BUILD_URL} and verify the build', cc: '', from: '', replyTo: '', subject: 'Job ${JOB_NAME} (${BUILD_NUMBER}) is waiting for input', to: 'nileshdeals@gmail.com'
+                //mail bcc: '', body: 'Please go to ${BUILD_URL} and verify the build', cc: '', from: '', replyTo: '', subject: 'Job ${JOB_NAME} (${BUILD_NUMBER}) is waiting for input', to: 'nileshdeals@gmail.com'
             }
         }
         
