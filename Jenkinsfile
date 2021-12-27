@@ -10,9 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh ("build.sh")
-                echo $?
-                
+              
             }
         }
         stage('Deploy') {
